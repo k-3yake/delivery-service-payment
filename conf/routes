@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+POST    /account/                        org.km.application.controllers.AccountController.register
+PUT     /account/*loginId                org.km.application.controllers.AccountController.update(loginId: String)
+GET     /serviceAuth/*loginId            org.km.application.controllers.ServiceController.auth(loginId: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
