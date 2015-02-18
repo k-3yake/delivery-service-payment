@@ -3,12 +3,13 @@
 # ~~~~
 
 # Home page
-GET      /                               org.km.application.controllers.Application.index()
-GET        /*file                        controllers.Assets.versioned(path="/public", file: Asset)
+GET     /*                              org.km.view.controllers.AccountViewController.init
 
-POST    /account/                        org.km.application.controllers.AccountController.register
-PUT     /account/*loginId                org.km.application.controllers.AccountController.update(loginId: String)
-GET     /serviceAuth/*loginId            org.km.application.controllers.ServiceController.auth(loginId: String)
+GET     /account/                       org.km.view.controllers.AccountViewController.init
+POST    /account/                       org.km.application.controllers.AccountController.register
+PUT     /account/*loginId               org.km.application.controllers.AccountController.update(loginId: String)
 
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /serviceAuth/*loginId           org.km.application.controllers.ServiceController.auth(loginId: String)
+
+GET     /asstes/*file                   controllers.Assets.versioned(path="/public", file: Asset)
+
