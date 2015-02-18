@@ -3,6 +3,9 @@
 # ~~~~
 
 # Home page
+GET      /                               org.km.application.controllers.Application.index()
+GET        /*file                        controllers.Assets.versioned(path="/public", file: Asset)
+
 POST    /account/                        org.km.application.controllers.AccountController.register
 PUT     /account/*loginId                org.km.application.controllers.AccountController.update(loginId: String)
 GET     /serviceAuth/*loginId            org.km.application.controllers.ServiceController.auth(loginId: String)
