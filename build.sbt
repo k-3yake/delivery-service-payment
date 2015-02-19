@@ -11,8 +11,7 @@ libraryDependencies ++= Seq(
   anorm,
   cache,
   ws,
-  "org.webjars" % "angularjs" % "1.3.13",
-  "org.webjars" % "requirejs" % "2.1.11-1"
+  "org.webjars" % "angularjs" % "1.3.13"
 )
 
 pipelineStages := Seq(rjs, digest, gzip)
