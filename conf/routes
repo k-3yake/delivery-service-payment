@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /*                              org.km.view.controllers.AccountViewController.init
+GET     /                               org.km.view.controllers.AccountViewController.init
 
 GET     /account/                       org.km.view.controllers.AccountViewController.init
 POST    /account/                       org.km.application.controllers.AccountController.register

@@ -6,7 +6,6 @@ import play.api.mvc._
 object AccountViewController extends Controller {
 
   def init = Action {
-    println("call ViewController")
     Ok(views.html.Index())
   }
 }
