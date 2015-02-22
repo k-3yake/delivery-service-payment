@@ -10,8 +10,9 @@ libraryDependencies ++= Seq(
   jdbc,
   anorm,
   cache,
-  ws,
-  "org.webjars" % "angularjs" % "1.3.13"
+  ws
+  ,"org.webjars" % "angularjs" % "1.3.13"
+  ,"org.webjars" % "angular-protractor" % "1.6.1"
 )
 
 pipelineStages := Seq(rjs, digest, gzip)

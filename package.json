@@ -1,0 +1,31 @@
+{
+  "name": "delivery-service-payment",
+  "version": "1.0.0",
+  "description": "This is your new Play application =================================",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-protractor-runner": "^1.2.1",
+    "grunt-shell": "^1.1.1",
+    "grunt-shell-spawn": "^0.3.1",
+    "matchdep": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k-3yake/delivery-service-payment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-3yake/delivery-service-payment/issues"
+  },
+  "homepage": "https://github.com/k-3yake/delivery-service-payment"
+}
