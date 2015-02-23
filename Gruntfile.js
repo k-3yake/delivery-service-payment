@@ -42,7 +42,7 @@ module.exports = function (grunt) {
         }
     });
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-    grunt.registerTask('selenium', "protractor run" , function(){
+    grunt.registerTask('test', "protractor run" , function(){
         grunt.task.run('shell:webdriver_start','shell:sleep','protractor:my_target','shell:webdriver_stop');
     });
 };
