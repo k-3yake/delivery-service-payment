@@ -23,5 +23,3 @@ integrationTest := {
   sum
 }
 
-
-pipelineStages := Seq(rjs, digest, gzip)
