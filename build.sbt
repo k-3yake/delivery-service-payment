@@ -1,6 +1,6 @@
 name := """delivery-service-payment"""
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
 
 scalaVersion := "2.11.1"
 
@@ -16,12 +16,3 @@ libraryDependencies ++= Seq(
 )
 
 testOptions in Test += Tests.Argument(TestFrameworks.Specs2, "junitxml", "console")
-
-val integrationTest = taskKey[Unit]("Execute integration Test")
-
-integrationTest := {
-  val sum = 1 + 3
-  println("sum: " + sum)
-  sum
-}
-
